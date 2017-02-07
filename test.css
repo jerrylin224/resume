@@ -1,0 +1,13 @@
+ul {
+  font-size: 0;
+}
+
+li {
+  display: inline-block;
+  width: 19%;
+  margin-right: 10px;
+}
+
+img {
+  width: 100%;
+}
