@@ -91,6 +91,7 @@ body {
     display: flex;
 }
 
+
 h1.name-boss {
     font-size: 100px;
     color: #fff;
@@ -127,18 +128,45 @@ header {
     display: flex;
 }
 
-.nav {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
+.nav-tabs {
+    border-bottom: 0;
+    text-align: center;
 }
-
 
 
 .nav>li {
     position: relative;
     display: block;
 }
+
+.nav-tabs>li {
+    float: none;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #FFF;
+    cursor: default;
+    background-color: #0CD2A4;
+    border: 2px solid #0CD2A4;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.nav-tabs>li>a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height: 1.42857143;
+    font-size: 23px;
+    border: 2px solid rgba(255,255,255,.25);
+    color: #FFF;
+    padding: 10px 20px;
+    font-weight: 300;
+    border-radius: 50px;
+    text-align: center;
+}
+
 
 .dropdown-toggle.circle-main, .dropdown-toggle.circle-main:focus {
     border-radius: 100%;
@@ -160,6 +188,41 @@ header {
     position: relative;
     display: block;
     padding: 10px 15px;
+}
+
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.title-wk {
+    text-align: center;
+    font-size: 34px;
+    color: #0CD2A4;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.wk-company, .wk-date {
+    text-align: center;
+    color: rgba(255,255,255,.7);
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.text-wk {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    font-weight: 300;
 }
 
 a, a:active, a:hover, a:visited {
@@ -229,14 +292,7 @@ article .fa {
     padding-left: 15px;
 }
 
-.education{
-  display: none;
- }
 
- #taiwan:hover .education,
- #japan:hover .education {
-  display: block;
- }
 
  .project::before,
  .project::after {
@@ -287,10 +343,15 @@ footer p {
 }
 
 .bg-skills,
-.bg-contact {
+.bg-contact,
+.bg-work {
   background: #171E2D url("subheader.png") 0 0 no-repeat;
 }
 
+
+.tab-content {
+    margin-top: 50px;
+}
 
 .col-md-4 {
     width: 33.33333333%;
@@ -304,6 +365,14 @@ float: left;
 .full-secion {
   width: 100%;
   padding: 0 60px;
+}
+
+.full-section-two {
+    width: 100%;
+    padding-top: 60px;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .container {
