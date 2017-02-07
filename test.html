@@ -2,7 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="test.css" rel="stylesheet" />
+    <link href="test.css" rel="stylesheet" />  
+    <link href="assets/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="assets/tether.min.js"></script>
+    <script type="text/javascript" src="assets/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="assets/bootstrap.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
           $('[data-toggle="tooltip"]').tooltip();   
@@ -13,17 +17,7 @@
         e.preventDefault()
         $(this).tab('show')
       })
-    </script>    
-    <script type="text/javascript" src="assets/tether.min.js"></script>
-
-    <script type="text/javascript" src="assets/jquery-3.1.1.js"></script>
-    <script type="text/javascript" src="assets/bootstrap.min.js"></script>
-    <script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-    </script>
-    <script>$('a').tooltip();</script>
+    </script>  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -32,29 +26,38 @@
   <a class = "close" data-dismiss = "alert" href = "#" aria-hidden = "true">
    &times;ssdf
 </a>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
-    </button>
+    <h2>Example of creating Modals with Twitter Bootstrap</h2>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            sadfasdfsdafsd
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- Button trigger modal -->
+<button class = "btn btn-primary btn-lg">
+   Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class = "modal fade" id = "myModal" tabindex = "-1" role = "dialog" 
+   aria-labelledby = "myModalLabel" aria-hidden = "true">
+   <div class = "modal-dialog">
+      <div class = "modal-content">
+         <div class = "modal-header">
+            <h4 class = "modal-title" id = "myModalLabel">
+               Fish Hostel魚旅背包客棧官網
+            </h4>
+         </div>
+         
+         <div class = "modal-body">
+            <p>這是我在青旅當管家時透過WordPress所建的網站。由於當時的我完全不了解任何程式語言，所以只能用wor這是我在青旅當管家時透過WordPress所建的網站。由於當時的我完全不了解任何程式語言，所以只能用wor這是我在青旅當管家時透過WordPress所建的網站。由於當時的我完全不了解任何程式語言，所以只能用wor</p>
+         </div>
+         
+         <div class = "modal-footer">
+               <!-- <a href="" target="_blank" class="btn btn-primary btn-lg active" role="button">網站</a> -->
+               <a href="Assignment.pdf" download="proposed_file_name">Download</a>
+            <a href="http://yahoo.com.tw" target="_blank" class="btn btn-default btn-lg active" role="button">程式碼</a>
+         </div>
+         
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+  
+</div><!-- /.modal -->
      <ul>
             <li data-toggle="tooltip" data-placement="bottom" title="人生第一次挑戰搭便車＆沙發衝浪。在日本交換生涯結束之前，我規劃從我所在的千葉縣，搭車前往北海道最北端。雖然最後因為一些因素只搭到青森就結束旅程，但我也很滿足了。"><img src="image/life-1.jpg"  alt="" /></li>
             <li data-toggle="tooltip" data-placement="bottom" title="在大四寒假的時候我跑到菲律賓當了六個禮拜的國際志工，而這也是我生平第一次'一個人'出國的經驗（雖然我後來發現我的夥伴有一大堆中國人跟台灣人，一點都不“異國”XD）。" > <img src="image/life-2.jpg"  alt="" /></li>
@@ -122,5 +125,27 @@
     </div>
     <!-- // Work -->
   </section>
+   <div class="container">
+          <ul class="row wall-portfolio">
+            <li class="col-md-4 doblock">
+              <a class="callme" id="" href="#" data-toggle = "modal" data-target = "#myModal">
+                <img class="wall-gallery" src="https://res.cloudinary.com/cakeresume/image/upload/v1486087583/m7x0alhpsyucvqzabuuy.png">
+              </a>
+            </li>
+            <li class="col-md-4 doblock">
+              <a href="#">
+                <img class="wall-gallery" src="https://res.cloudinary.com/cakeresume/image/upload/v1486087583/m7x0alhpsyucvqzabuuy.png">
+              </a>
+            </li>
+            <li class="col-md-4 doblock">
+              <a href="#">
+                <img class="wall-gallery" src="https://res.cloudinary.com/cakeresume/image/upload/v1486087583/m7x0alhpsyucvqzabuuy.png">
+              </a>
+            </li> 
+          </ul>
+        </div>
+
+    <!-- Button trigger modal -->
+
   </body>
 </html>

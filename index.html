@@ -6,13 +6,13 @@
     <link href="assets/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="assets/style.css" rel="stylesheet" />
     <script src="assets/tether.min.js"></script>
+    <script src="assets/jquery-3.1.1.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
           $('[data-toggle="tooltip"]').tooltip();   
       });
     </script>
-    <script src="assets/jquery-3.1.1.js"></script>
-    <script src="assets/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8" />
   </head>
@@ -44,6 +44,27 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div class = "modal fade" id = "portfolio-1" tabindex = "-1" role = "dialog" 
+       aria-labelledby = "myModalLabel" aria-hidden = "true">
+       <div class = "modal-dialog">
+          <div class = "modal-content">
+             <div class = "modal-header">
+                <h4 class = "modal-title" id = "myModalLabel">
+                   Fish Hostel魚旅背包客棧官網
+                </h4>
+             </div> 
+             <div class = "modal-body">
+                <p>這是我在青旅當管家時透過WordPress所建的網站。由於當時的我完全不了解任何程式語言，所以只能用wor這是我在青旅當管家時透過WordPress所建的網站。由於當時的我完全不了解任何程式語言，所以只能用wor這是我在青旅當管家時透過WordPress所建的網站。由於當時的我完全不了解任何程式語言，所以只能用wor</p>
+             </div>
+             <div class = "modal-footer">
+                   <!-- <a href="" target="_blank" class="btn btn-primary btn-lg active" role="button">網站</a> -->
+                   <a href="Assignment.pdf" download="proposed_file_name">Download</a>
+                <a href="http://yahoo.com.tw" target="_blank" class="btn btn-default btn-lg active" role="button">程式碼</a>
+             </div>
+          </div><!-- /.modal-content -->
+       </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <header>
         <!-- Menu Navigation -->
       <div id="top" class="container">
@@ -77,7 +98,7 @@
         <!-- Menu right - Hidden in small devices -->
         <div class="nav-extra hidden-xs">
           <!-- Button Contact Modal -->
-          <a class="callme" href="#" data-toggle="modal" data-target="#callmeModal">
+          <a class="callme" href="#" data-toggle="modal" data-target="#portfolio-1">
             <span class="glyphicon glyphicon glyphicon-earphone call" aria-hidden="true"></span>
           </a>
           <!-- Button 'Hire me' -->
@@ -170,11 +191,11 @@
       <section id="aboutme" class="full-section">
         <!-- <div> -->
           <ul>
-            <li><img src="image/life-1.jpg" alt="" /></li>
-            <li><img src="image/life-2.jpg" alt="" /></li>
-            <li><img src="image/life-3.jpg" alt="" /></li>
-            <li><img src="image/life-4.jpg" alt="" /></li>
-            <li><img src="image/life-5.jpg" alt="" /></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="人生第一次挑戰搭便車＆沙發衝浪。在日本交換生涯結束之前，我規劃從我所在的千葉縣，搭車前往北海道最北端。雖然最後因為一些因素只搭到青森就結束旅程，但我也很滿足了。"><img src="image/life-1.jpg"  alt="" /></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="在大四寒假的時候我跑到菲律賓當了六個禮拜的國際志工，而這也是我生平第一次'一個人'出國的經驗（雖然我後來發現我的夥伴有一大堆中國人跟台灣人，一點都不“異國”XD）。" > <img src="image/life-2.jpg"  alt="" /></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="在日本千葉大學交換一年期間，讓我擁有了一段非常美好的人生回憶，也讓我交到了許多來自不同國家的好朋友：）"><img src="image/life-3.jpg"  alt="" /></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="大四時參加的工學院的計畫，讓我生平第一次踏上美帝的國土。也謝謝成大學長姐的導覽，讓我有機會一虧Google總部，還買了很多紀念品XD。"><img src="image/life-4.jpg"  alt="" /></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="我家的'大仔'，雖然大隻但是叫聲卻很秀氣（？），是隻很愛撒嬌和橫衝直衝的公貓。"><img src="image/life-5.jpg"  alt="" /></li>
           </ul>
         <!-- </div> -->
         <div class="container">
@@ -320,12 +341,12 @@
         <div class="container">
           <ul class="row wall-portfolio">
             <li class="col-md-4 doblock">
-              <a href="#">
+              <a href="#" data-toggle = "modal" data-target = "#portfolio-1">
                 <img class="wall-gallery" src="https://res.cloudinary.com/cakeresume/image/upload/v1486087583/m7x0alhpsyucvqzabuuy.png">
               </a>
             </li>
             <li class="col-md-4 doblock">
-              <a href="#">
+              <a href="#" data-toggle = "modal" data-target = "#portfolio-1">
                 <img class="wall-gallery" src="https://res.cloudinary.com/cakeresume/image/upload/v1486087583/m7x0alhpsyucvqzabuuy.png">
               </a>
             </li>
