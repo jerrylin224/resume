@@ -2,13 +2,36 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- <link href="assets/style.css" rel="stylesheet" /> -->
     <link href="test.css" rel="stylesheet" />
-    <script src="assets/jquery-3.1.1.js"></script>
-    <script src="assets/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+      });
+    </script>
+    <script type="text/javascript">
+      $('#myTab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    </script>    
+    <script type="text/javascript" src="assets/tether.min.js"></script>
+
+    <script type="text/javascript" src="assets/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="assets/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+    <script>$('a').tooltip();</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
+  <a href = "#" data-toggle="tooltip" data-placement="bottom" title="Example tooltip">Hover over me</a>
+  <a href = "#" data-toggle="popover" title = "Example popover">Hover over me</a>
+  <a class = "close" data-dismiss = "alert" href = "#" aria-hidden = "true">
+   &times;ssdf
+</a>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
       Launch demo modal
@@ -33,36 +56,71 @@
       </div>
     </div>
      <ul>
-            <li><img src="image/life-1.jpg"  alt="" /></li>
-            <li><img src="image/life-2.jpg"  alt="" /></li>
-            <li><img src="image/life-3.jpg"  alt="" /></li>
-            <li><img src="image/life-4.jpg"  alt="" /></li>
-            <li><img src="image/life-5.jpg"  alt="" /></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="人生第一次挑戰搭便車＆沙發衝浪。在日本交換生涯結束之前，我規劃從我所在的千葉縣，搭車前往北海道最北端。雖然最後因為一些因素只搭到青森就結束旅程，但我也很滿足了。"><img src="image/life-1.jpg"  alt="" /></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="在大四寒假的時候我跑到菲律賓當了六個禮拜的國際志工，而這也是我生平第一次'一個人'出國的經驗（雖然我後來發現我的夥伴有一大堆中國人跟台灣人，一點都不“異國”XD）。" > <img src="image/life-2.jpg"  alt="" /></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="在日本千葉大學交換一年期間，讓我擁有了一段非常美好的人生回憶，也讓我交到了許多來自不同國家的好朋友：）"><img src="image/life-3.jpg"  alt="" /></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="大四時參加的工學院的計畫，讓我生平第一次踏上美帝的國土。也謝謝成大學長姐的導覽，讓我有機會一虧Google總部，還買了很多紀念品XD。"><img src="image/life-4.jpg"  alt="" /></li>
+            <li data-toggle="tooltip" data-placement="bottom" title="我家的'大仔'，雖然大隻但是叫聲卻很秀氣（？），是隻很愛撒嬌和橫衝直衝的公貓。"><img src="image/life-5.jpg"  alt="" /></li>
           </ul>
 
-    <nav id="ha-header" class="ha-header ha-header-show">
-        <ul class="nav">
-            <li class="dropdown open">
-              <!-- Dropdown menu -->
-              <a class="dropdown-toggle circle-main"  href="#" role="button" aria-haspopup="true" aria-expanded="true">        
-            <svg class="hello" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z"></path>
-                <path d="M0 0h24v24H0z" fill="none"></path>
-            </svg>
-              </a>
-              <!-- Navigation Sections -->
-              <ul class="dropdown-menu">
-            <li><a data-scroll="" data-options="{ &quot;easing&quot;: &quot;easeOutQuint&quot; }" href="#top" class="menu-item wall">Hello</a></li>
-            <li><a data-scroll="" data-options="{ &quot;easing&quot;: &quot;easeOutQuint&quot; }" href="#about" class="menu-item wall">About Me</a></li>
-            <li><a data-scroll="" data-options="{ &quot;easing&quot;: &quot;easeOutQuint&quot; }" href="#skills" class="menu-item wall">Skills and Abilities</a></li>
-            <li><a data-scroll="" data-options="{ &quot;easing&quot;: &quot;easeOutQuint&quot; }" href="#education" class="menu-item wall">Education</a></li>
-            <li><a data-scroll="" data-options="{ &quot;easing&quot;: &quot;easeOutQuint&quot; }" href="#work" class="menu-item wall">Work Experience</a></li>
-            <li><a data-scroll="" data-options="{ &quot;easing&quot;: &quot;easeOutQuint&quot; }" href="#portfolio" class="menu-item wall">Portfolio</a></li>
-            <li><a data-scroll="" data-options="{ &quot;easing&quot;: &quot;easeOutQuint&quot; }" href="#download" class="menu-item wall">Social Networks</a></li>
-            <li><a data-scroll="" data-options="{ &quot;easing&quot;: &quot;easeOutQuint&quot; }" href="#contacto" class="menu-item wall">Contact Me</a></li>
-              </ul>
-            </li>
-          </ul>
-      </nav>
+<section id="work" class="full-section-two bg-work">
+    <!-- Text Work Experience -->
+    <div class="container">
+      <h2 class="title-main mywhite">Work Experience.</h2>
+      <p class="text-main mywhite">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <!-- Work -->
+    <div class="container cont-mg">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class=""><a href="#1" role="tab" data-toggle="tab" aria-expanded="false">Google</a></li>
+          <li role="presentation" class=""><a href="#2" role="tab" data-toggle="tab" aria-expanded="false">Envato</a></li>
+          <li role="presentation" class=""><a href="#3" role="tab" data-toggle="tab" aria-expanded="false">Dribbble</a></li>
+          <li role="presentation" class=""><a href="#4" role="tab" data-toggle="tab" aria-expanded="false">Github</a></li>
+          <li role="presentation" class="active"><a href="#5" role="tab" data-toggle="tab" aria-expanded="true">Freelancer</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <!-- Tab 1 -->
+          <div role="tabpanel" class="tab-pane fade" id="1">
+            <h3 class="title-wk">Front End Web Developer</h3>
+          <p class="wk-company">Google Inc.</p>
+          <p class="text-wk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. <br> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+          <p class="wk-date">2014 - 2015</p>
+          </div>
+          <!-- Tab 2 -->
+          <div role="tabpanel" class="tab-pane fade" id="2">
+            <h3 class="title-wk">Wordpress Developer</h3>
+            <p class="wk-company">Envato</p>
+          <p class="text-wk">Duis aute irure dolor in reprehenderit in voluptate velit. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+          <p class="wk-date">2014 - 2015</p>
+          </div>
+          <!-- Tab 3 -->
+          <div role="tabpanel" class="tab-pane fade" id="3">
+            <h3 class="title-wk">Web Designer</h3>
+          <p class="wk-company">Dribbble</p>      
+          <p class="text-wk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. <br> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+          <p class="wk-date">2012 - 2014</p>
+          </div>
+          <!-- Tab 4 -->
+          <div role="tabpanel" class="tab-pane fade" id="4">
+            <h3 class="title-wk">Software Engineer</h3>
+            <p class="wk-company">Github</p>
+            <p class="text-wk">Duis aute irure dolor in reprehenderit in voluptate velit. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <p class="wk-date">2010 - 2012</p>
+          </div>
+          <!-- Tab 5 -->
+          <div role="tabpanel" class="tab-pane fade active in" id="5">
+              <h3 class="title-wk">Freelancer (Web Designer)</h3>
+              <p class="wk-company">Freelancer</p>
+            <p class="text-wk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. <br> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+            <p class="wk-date">2008 - 2010</p>
+          </div>
+        </div>
+        <!-- // Tab panes -->
+    </div>
+    <!-- // Work -->
+  </section>
   </body>
 </html>
