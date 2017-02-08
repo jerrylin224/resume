@@ -251,13 +251,6 @@ a, a:active, a:hover, a:visited {
   width: 1000px;
   margin: 0 auto;
 }
- article {
-  /*padding: 30px 200px;*/
-  /*margin: 0 auto;*/
- }
-#name {
-  text-align: center;
-}
 
  article img {
   display: block;
@@ -322,19 +315,6 @@ article .fa {
   padding-top: 15px;
  }
 
-footer {
-  background: #202020;
-  height: 30px;
-  color: #484848;
-  text-align: center;
-}
-
-footer p {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
-}
-
 .row::before,
 .row::after {
   display: block;
@@ -376,7 +356,8 @@ float: left;
 }
 
 .container {
-  margin: 15px auto;
+  margin: 0px auto;
+  padding: 0 15px;
   /*background:#121212 url("subheader.png") 0 0 no-repeat;*/
 }
 
@@ -425,6 +406,8 @@ float: left;
   color: #fff;
 }
 
+
+
 .title-main {
   color: #10C198;
   font-size: 80px;
@@ -432,8 +415,108 @@ float: left;
   margin: 20px 0 30px 0;
 }
 
+.text-main {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#cd-timeline {
+    position: relative;
+    padding-right: 0;
+    padding-bottom: 2em;
+    padding-left: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#cd-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 100%;
+    width: 4px;
+    background: #d7e4ed;
+}
+
+.cd-timeline-block {
+    position: relative;
+    margin: 2em 0;
+}
 
 
+
+.cd-timeline-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cd-timeline-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
+}
+
+.cd-timeline-img img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    position: relative;
+    left: 31%;
+    top: 30%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+.cd-timeline-content {
+    position: relative;
+    margin-left: 140px;
+    background: #222930;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.cd-timeline-content h2 {
+    color: #FFF;
+}
+
+.cd-timeline-content h3 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.cd-timeline-content .cd-date {
+    float: left;
+    padding: .8em 0;
+    opacity: .7;
+}
+
+.txt-times {
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding-top: 60px;
+    border-bottom: 2px solid #00CD98;
+    width: 140px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+.cd-container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
 
 .spear {
   margin-top: 50px;
@@ -514,6 +597,133 @@ float: left;
     content: "\e062";
 }
 
+.full-section-three {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.title-ct {
+    font-size: 70px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.separator-ct {
+    border-bottom: 3px solid #0CD2A4;
+    width: 200px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+}
+
+.txt-center {
+    text-align: center;
+    display: inline-block;
+}
+
+.icon-ct {
+    color: #fff;
+    font-size: 40px;
+    padding-top: 4px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.text-ct {
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+    width: 100%;
+}
+
+.cntme {
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 15px 12px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.42857143;
+    color: #FFF;
+    background-color: rgba(0,0,0,.36);
+    background-image: none;
+    border: none;
+    border-bottom: 3px solid #0CD2A4;
+    border-radius: 0;
+}
+
+.ct-name {
+    background-image: url("image/user.png");
+    background-position-x: 10px;
+    background-position-y: 50%;
+    background-position: 10px 50%;
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgba(0,0,0,.360784);
+    padding-left: 52px;
+}
+
+.ct-mail {
+    background-image: url("image/user.png");
+    background-position-x: 10px;
+    background-position-y: 50%;
+    background-position: 10px 50%;
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgba(0,0,0,.360784);
+    padding-left: 52px;
+}
+
+#successmsg {
+    background-color: #0CD2A4;
+}
+
+.btn-ctc {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    font-size: 25px;
+    color: #fff;
+    background-color: #0CD2A4;;
+    border-radius: 50px;
+    padding: 15px 20px;
+    display: block;
+    font-weight: 300;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 100%;
+}
+
+.full-footer {
+    background-color: #0E0D1C;
+    color: rgba(255,255,255,.49);
+}
+
+.padding-footer {
+    padding: 50px;
+}
+
 @media (min-width: 768px) {
   .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3,
   .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
@@ -557,8 +767,60 @@ float: left;
   }
 }
 
-media (min-width: 992px)
-.col-md-6 {
-    width: 50%;
-}
+@media only screen and (min-width: 1170px) {
+  .cd-timeline-img {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
 
+  #cd-timeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+
+  .cd-timeline-content {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 42%;
+}
+  .cd-timeline-content .cd-date {
+      position: absolute;
+      width: 100%;
+      left: 139%;
+      font-style: italic;
+      font-weight: 300;
+      top: 6px;
+      font-size: 23px;
+      color: #222930;
+      float: left;
+      padding: .3em 0;
+      opacity: .7;
+  }
+
+  .cd-timeline-block:nth-child(even) .cd-timeline-content {
+    float: right;
+  }
+
+  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+      left: auto;
+      right: 142%;
+      text-align: right;
+  }
+  .txt-times {
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding-top: 60px;
+    border-bottom: 2px solid #00CD98;
+    width: 140px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+  }
+}
