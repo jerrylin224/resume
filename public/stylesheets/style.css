@@ -108,7 +108,7 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    background: #171E2D url("subheader.png") 0 0 no-repeat;
+    background: #171E2D url("images/subheader.png") 0 0 no-repeat;
     background-size: cover;
     width: 100%;
     min-height: 100vh;
@@ -325,7 +325,7 @@ article .fa {
 .bg-skills,
 .bg-contact,
 .bg-work {
-  background: #171E2D url("subheader.png") 0 0 no-repeat;
+  background: #171E2D url("images/subheader.png") 0 0 no-repeat;
 }
 
 
@@ -667,7 +667,7 @@ float: left;
 }
 
 .ct-name {
-    background-image: url("image/user.png");
+    background-image: url("images/user.png");
     background-position-x: 10px;
     background-position-y: 50%;
     background-position: 10px 50%;
@@ -681,7 +681,7 @@ float: left;
 }
 
 .ct-mail {
-    background-image: url("image/user.png");
+    background-image: url("images/user.png");
     background-position-x: 10px;
     background-position-y: 50%;
     background-position: 10px 50%;
