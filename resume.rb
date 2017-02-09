@@ -30,10 +30,10 @@ post "/contact" do
       :authentication       => :plain, 
       :domain               => 'localhost.localdomain'
     })
-  redirect '/success' 
+  redirect '/thank_you' 
 end
 
 
-get '/success' do
-  "Thanks for your email. We'll be in touch soon."
+get '/thank_you' do
+  erb :thank_you
 end
