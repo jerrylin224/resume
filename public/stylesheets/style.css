@@ -263,10 +263,18 @@ header {
 
 .text-wk {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     color: #fff;
     padding-top: 20px;
     font-weight: 300;
+}
+
+.possible-contribution {
+  margin-top: 40px;
+}
+
+h4 {
+    font-size: 48px;
 }
 
 a, a:active, a:hover, a:visited {
@@ -425,6 +433,10 @@ article .fa {
   padding: 20px 0;
 }
 
+
+.title-four {
+  text-align: center;
+}
 .text-three {
   font-size: 18px;
   text-align: center;
@@ -845,7 +857,7 @@ article .fa {
 
 .text-awsm {
     font-size: 21px;
-    text-align: center;
+    /*text-align: center;*/
     padding-top: 13px;
     padding-bottom: 14px;
     color: #333333;

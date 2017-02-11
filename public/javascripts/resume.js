@@ -1,23 +1,9 @@
-(function($) {          
-    $(document).ready(function(){                    
-        $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 600) {
-                // $('.ha-header-show').fadeOut(500);
-            // } else {
-                $('.ha-header-subshow').fadeIn(500);
-            }
-        });
-    });
-})(jQuery);
-
-
-
 $(document).ready(function(){
           $('[data-toggle="tooltip"]').tooltip();   
       });
 
 $(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
+  $('a[href*="#"]:not([href="#"], [href="#1"], [href="#2"], [href="#3"], [href="#4"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
