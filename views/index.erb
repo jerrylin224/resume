@@ -5,19 +5,19 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="close">
           <span aria-hidden="true">x</span>
         </button>
-        <h2 class="modal-title getmetelf" id="ModalCall">Get in touch with me</h2>
+        <h2 class="modal-title getmetelf" id="ModalCall">我的聯絡方式</h2>
       </div>
       <div class="modal-body">
         <div class="myphone">
           <p class="greynum">+886</p>
-          922 645 097
+          922-645-097
         </div>
         <div class="contacthours">
-          <p class="hourcall">Contact hours</p>
+          <p class="hourcall">聯絡時間</p>
           <div class="rightcall">
-            <p class="dayscall">Mon - Fri</p>
+            <p class="dayscall">星期一 - 星期五</p>
             <p class="horario">9:00 - 22:00</p>
-            <p class="dayscall">Sat - Sun</p>
+            <p class="dayscall">星期六 - 星期日</p>
             <p class="horario">10:00 - 18:00</p>
           </div>
         </div>
@@ -188,7 +188,7 @@
   </div>
     <!-- // Personal Details -->
 </header>
-  <section class="full-section my-about">
+  <section id="about" class="full-section my-about">
     <article class="container">
       <div class="row">
         <div class="col-md-6">
@@ -246,64 +246,24 @@
       </div>
     </div>
   </section>
-  <section id="education" class="full-section">
-<!-- Text Education -->
-<div class="container">
-  <h2 class="title-main">教育程度</h2>
-</div>
-
-<!-- Timeline Responsive -->
-<article id="cd-timeline" class="cd-container">
-  <!-- 1 Item -->
-  <div class="cd-timeline-block">
-    <!-- Circle image 64x64 -->
-    <div class="cd-timeline-img my-green">
-      <img src="http://izee.ro/market/mywall/one-plus/img/ed1.png" alt="Engineering">
-    </div>
-    <!-- Info 1 Education -->
-    <div class="cd-timeline-content">
-      <h2>J-PAC計畫交換生</h2>
-      <h3>千葉大學</h3>
-      <span class="cd-date">2013 - 2014</span>
-    </div>
+  <section id="portfolio" class="full-section">
+  <div class="container">
+    <h2 class="title-main">作品集</h2>
+    <p class="text-main">在這裡收集了我先前工作時用wordpress建的網站、去年從零自學html/css後幫家裡建的官網，還有好幾份Launch School的作業。如果想要了解更多內容，可以點擊圖片看介紹還有到repo看程式碼。</p>
   </div>
-  <!-- 2 Item -->
-  <div class="cd-timeline-block">
-    <!-- Circle image 64x64 -->
-    <div class="cd-timeline-img my-green">
-      <img src="http://izee.ro/market/mywall/one-plus/img/ed2.png" alt="Science">
-    </div> 
-    <!-- Info 2 Education -->
-    <div class="cd-timeline-content">
-      <h2>環境工程學系</h2>
-      <h3>成功大學</h3>
-      <span class="cd-date">2009 - 2013</span>
-    </div> 
-  </div> 
-  <!-- 3 Item -->
-  <div class="cd-timeline-block">
-    <!-- Circle image 64x64 -->
-    <div class="cd-timeline-img my-green">
-      <img src="http://izee.ro/market/mywall/one-plus/img/ed3.png" alt="Bachelor">
-    </div>
-    <!-- Info 3 Education -->
-    <div class="cd-timeline-content">
-      <h2>Bachelor Degree of Mobile and Web Design</h2>
-      <h3>屏東高中</h3>
-      <span class="cd-date">2006 - 2009</span>
-    </div> 
-  </div> 
-  <!-- The Beginning of Times image -->
-  <div class="cd-timeline-block">
-    <!-- Circle image 64x64 -->
-    <div class="cd-timeline-img my-green">
-      <img src="http://izee.ro/market/mywall/one-plus/img/ed4.png" alt="Times">
-    </div> 
+  <div class="container">
+    <ul class="row wall-portfolio">
+      <% (1..6).each do |i| %>
+        <li class="col-md-4 doblock">
+          <a href="#" data-toggle = "modal" data-target = "#portfolio-<%= i %>">
+            <img class="wall-gallery" src="/images/作品集-<%= i %>.png">
+          </a>
+        </li>
+      <% end %>
+    </ul>
   </div>
-</article>
-<!-- The Beginning of Times item -->
-<p class="txt-times">誕生於<br>西元1991</p>
 </section>
+  
   <section id="work" class="full-section-two bg-work">
 <!-- Text Work Experience -->
 <div class="container">
@@ -355,22 +315,63 @@
   </div>
 <!-- // Work -->
 </section>
-<section id="portfolio" class="full-section">
-  <div class="container">
-    <h2 class="title-main">作品集</h2>
-    <p class="text-main">在這裡收集了我先前工作時用wordpress建的網站、去年從零自學html/css後幫家裡建的官網，還有好幾份Launch School的作業。如果想要了解更多內容，可以點擊圖片看介紹還有到repo看程式碼。</p>
+<section id="education" class="full-section">
+<!-- Text Education -->
+<div class="container">
+  <h2 class="title-main">教育程度</h2>
+</div>
+
+<!-- Timeline Responsive -->
+<article id="cd-timeline" class="cd-container">
+  <!-- 1 Item -->
+  <div class="cd-timeline-block">
+    <!-- Circle image 64x64 -->
+    <div class="cd-timeline-img my-green">
+      <img src="http://izee.ro/market/mywall/one-plus/img/ed1.png" alt="Engineering">
+    </div>
+    <!-- Info 1 Education -->
+    <div class="cd-timeline-content">
+      <h2>J-PAC計畫交換生</h2>
+      <h3>千葉大學</h3>
+      <span class="cd-date">2013 - 2014</span>
+    </div>
   </div>
-  <div class="container">
-    <ul class="row wall-portfolio">
-      <% (1..6).each do |i| %>
-        <li class="col-md-4 doblock">
-          <a href="#" data-toggle = "modal" data-target = "#portfolio-<%= i %>">
-            <img class="wall-gallery" src="/images/作品集-<%= i %>.png">
-          </a>
-        </li>
-      <% end %>
-    </ul>
+  <!-- 2 Item -->
+  <div class="cd-timeline-block">
+    <!-- Circle image 64x64 -->
+    <div class="cd-timeline-img my-green">
+      <img src="http://izee.ro/market/mywall/one-plus/img/ed2.png" alt="Science">
+    </div> 
+    <!-- Info 2 Education -->
+    <div class="cd-timeline-content">
+      <h2>環境工程學系</h2>
+      <h3>成功大學</h3>
+      <span class="cd-date">2009 - 2013</span>
+    </div> 
+  </div> 
+  <!-- 3 Item -->
+  <div class="cd-timeline-block">
+    <!-- Circle image 64x64 -->
+    <div class="cd-timeline-img my-green">
+      <img src="http://izee.ro/market/mywall/one-plus/img/ed3.png" alt="Bachelor">
+    </div>
+    <!-- Info 3 Education -->
+    <div class="cd-timeline-content">
+      <h2>屏東第一男子高校</h2>
+      <h3>屏東高中</h3>
+      <span class="cd-date">2006 - 2009</span>
+    </div> 
+  </div> 
+  <!-- The Beginning of Times image -->
+  <div class="cd-timeline-block">
+    <!-- Circle image 64x64 -->
+    <div class="cd-timeline-img my-green">
+      <img src="http://izee.ro/market/mywall/one-plus/img/ed4.png" alt="Times">
+    </div> 
   </div>
+</article>
+<!-- The Beginning of Times item -->
+<p class="txt-times">誕生於<br>西元1991</p>
 </section>
 <section id="skills" class="full-section-two bg-skills">
     <div class="container">
@@ -428,12 +429,21 @@
          <div class="col-md-4">
           <img class="img-rd" src="http://izee.ro/market/mywall/one-plus/img/brain.png" alt="寫作者" />
           <h3 class="title-rd">寫作者</h3>
-          <p class="text-rd">從去年開始我養成了一天寫一篇<a href="http://www.createyourownlives.com" target="_blank" alt="林家弘的部落格">文章</a>的習慣，因為我想要透過這個方式，來倒逼自己輸入知識、大量思考、總結，期望自己的文字對他人有所幫助，而在這個過程中我也感受到寫作和思考帶來的好處。<br><br>雖然近期刻意放慢了產出的步調，但未來的我依舊會筆耕不輟，希望能寫出更多好文章。</p>
+          <p class="text-rd">從去年開始我養成了一天寫一篇<a href="http://www.createyourownlives.com" target="_blank" alt="林家弘的部落格">文章</a>的習慣，因為我想要透過這個方式，來倒逼自己輸入知識、大量思考、總結，雖然近期刻意放慢了產出的步調，但未來的我依舊會筆耕不輟，希望能寫出更多好文章。<br><br></p>
+          <ul>
+            <li>每天寫1000-1500字</li>
+            <li>5年內累積1000篇文章</li>
+          </ul>
         </div>
          <div class="col-md-4">
           <img class="img-rd" src="http://izee.ro/market/mywall/one-plus/img/rocket.png" alt="創業家"/>
           <h3 class="title-rd">實踐家</h3>
-          <p class="text-rd">「希望在29歲結束之前創業」，這是我給自己的目標。這是個大眾創業、自由工作者崛起的時代，但創業僅僅只是個人選擇實現自己目標的方式，並沒有特別高尚。<br><br></p>
+          <p class="text-rd">「希望在29歲結束之前創業」，這是我給自己的一個小里程碑。在這個大眾創業、自由工作者崛起的時代，每個人都有選擇實現自己目標的方式，而在我仔細衡量之後，創業確實是對我來說最好的方式。<br><br></p>
+          <ul>
+            <li>利用工作之餘或是公司允許時間測試專案</li>
+            <li>學習基本、必須且重要的各種知識</li>
+            <li>尋找能夠一起奮鬥的共同創辦人</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -511,7 +521,7 @@
   <div class="container padding-footer">
     <div class="row">
       <!-- Text Left -->
-      <div class="col-sm-8 foo-left">This is my personal resume and I hope you enjoyed it. See you soon. <br> Andrey Marin.</div>
+      <div class="col-sm-8 foo-left">這份履歷是我參考這份<a href="http://izee.ro/market/mywall/one-plus/" alt="履歷模板" target="_blank">模板</a>所完成的，希望你會喜歡。</div>
       <!-- Text Right -->
       <div class="col-sm-4 foo-right"><a href="https://github.com/jerrylin224/resume" target="_blank">原始碼</a></div>
     </div>
