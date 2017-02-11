@@ -12,9 +12,9 @@ end
 
 get '/' do
   @skill = {
-  'HTML5' => ['html5', 'my-sixty'], 'CSS3' => ['css3', 'my-fiftyfive'], 
-  'Ruby' => ['ruby', 'my-thirty'] , 'JavaScript' => ['javascript', 'my-sixty'], 
-  'PSQL' => ['psql', 'my-fiftyfive'], 'jQuery'=> ['jquery', 'my-thirty']
+  'HTML5' => ['html5', 'my-sixty'], 'CSS3' => ['css3', 'my-thirty'], 
+  'Ruby' => ['ruby', 'my-fiftyfive'] , 'JavaScript' => ['javascript', 'my-twentyfive'], 
+  'PSQL' => ['psql', 'my-fiftyfive'], 'jQuery'=> ['jquery', 'my-twentyfive']
   }
   erb :index
 end
