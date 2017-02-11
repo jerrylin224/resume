@@ -11,8 +11,15 @@ configure do
 end
 
 get '/' do
+  @skill = {
+  'HTML5' => ['html5', 'my-sixty'], 'CSS3' => ['css3', 'my-fiftyfive'], 
+  'Ruby' => ['ruby', 'my-thirty'] , 'JavaScript' => ['javascript', 'my-sixty'], 
+  'PSQL' => ['psql', 'my-fiftyfive'], 'jQuery'=> ['jquery', 'my-thirty']
+  }
   erb :index
 end
+
+
 
 post "/contact" do
   Pony.mail(
@@ -37,3 +44,4 @@ end
 get '/thank_you' do
   erb :thank_you
 end
+

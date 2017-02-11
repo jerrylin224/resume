@@ -70,11 +70,11 @@
       <div class = "modal-content">
          <div class = "modal-header">
             <h4 class = "modal-title" id = "myModalLabel">
-               Launch School作業－Todo App
+               Launch School作業－圈圈叉叉（tic-tac-toe）
             </h4>
          </div> 
          <div class = "modal-body">
-            <p>這個圈圈叉叉的程式，是Launch School的OOP課程中的一個作業，內容是把先前用procedural方式寫的的code改寫成OOP的形式大約花了我2-3天完成。<br>在接觸到OOP的觀念之前，都是用procedural的方式在寫程式，雖然比較直觀和有彈性，但是隨著程式碼和架構越來越複雜，用原先的作法可能就不太恰當。而這個時候學到了可以透過OOP這個方式，降低程式碼撰寫的重複性和複雜性。</p>
+            <p>這個圈圈叉叉的程式，是Launch School的OOP課程中的一個作業，內容是把先前用procedural方式寫的code改寫成OOP的形式，總共大約花了我2-3天完成。<br>在接觸到OOP的觀念之前，都是用procedural的方式在寫程式，雖然比較直觀和有彈性，但是隨著程式碼和架構越來越複雜，用原先的作法可能就不太恰當。而這個時候學到了可以透過OOP這個方式，降低程式碼撰寫的重複性和複雜性。</p>
          </div>
          <div class = "modal-footer">
             <a href="https://github.com/jerrylin224/lauchschool-work/blob/master/oop/oop_lesson5/ttt_bonus.rb" target="_blank" class="btn btn-default btn-lg active" role="button">程式碼</a>
@@ -169,7 +169,7 @@
     <!-- Menu right - Hidden in small devices -->
     <div class="nav-extra hidden-xs">
       <!-- Button Contact Modal -->
-      <a class="callme" href="#" data-toggle="modal" data-target="#portfolio-1">
+      <a class="callme" href="#" data-toggle="modal" data-target="#callmeModal">
         <span class="glyphicon glyphicon glyphicon-earphone call" aria-hidden="true"></span>
       </a>
       <!-- Button 'Hire me' -->
@@ -181,7 +181,7 @@
 
   <!-- Personal Details -->
   <div class="container">
-    <img class="img-circle imgsus" alt="Andrey Marin" src="/images/file.png">
+    <img class="img-circle imgsus" alt="Andrey Marin" src="/images/profile-1.png">
     <h1 class="name-boss">林家弘</h1>
     <h2 class="main-details">Designer. Programmer. Creative. Innovator.</h2>
     <p class="extend-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
@@ -193,7 +193,8 @@
       <div class="row">
         <div class="col-md-6">
           <h2 class="title-main">關於我</h2>
-          <p>在2016年年初結束在電商的實習之後，我就在想能不能透過什麼方式幫家中的事業導入更多的流量，所以就興起了幫家中架設一個簡單的靜態網站。<br>所以當時透過codecademy的課程自學加上實作，花了一百個小時左右架了人生第一個網站，雖然非常的陽春，但這也在我心中埋下了未來想要開發網站的種子。</p>
+          <p class="text-main">嗨，我是林家弘，我目前正在全職自學coding當中，期望在不久的將來能夠成為一名全端工程師，並透過代碼解決社會/公司/自己所面臨的問題。目標是在今年內得到海外的offer，正式開始在國外工作。<br><br>
+          平時最大的樂趣是閱讀還有寫作，有機會的話也喜歡一個人去不同的國家走走、找朋友。接下來想去這幾個城市/國家（北京、上海、印尼、泰國、吉爾吉斯）見見過去的好朋友們。</p>
         </div>
         <div class="col-md-6">
           <img src="http://www.createyourownlives.com/wp-content/uploads/createyourownlives-start-a-startup-is-a-technic.jpg" style="max-width: 100%;"alt="" />
@@ -203,147 +204,45 @@
   </section>
   <section id="aboutme" class="full-section">
     <!-- <div> -->
-      <ul>
-        <li data-toggle="tooltip" data-placement="bottom" title="在日本千葉大學交換一年期間，讓我擁有了一段非常美好的人生回憶，也讓我交到了許多來自不同國家的好朋友：）"><img src="/images/life-3.jpg"  alt="" /></li>
-        <li data-toggle="tooltip" data-placement="bottom" title="大四時參加的工學院的計畫，讓我生平第一次踏上美帝的國土。也謝謝成大學長姐的導覽，讓我有機會一虧Google總部，還買了很多紀念品XD。"><img src="/images/life-4.jpg"  alt="" /></li>
-        <li data-toggle="tooltip" data-placement="bottom" title="我家的肥貓'大仔'，雖然大隻但是叫聲卻很秀氣（可能是因為少了蛋蛋......），是隻很愛撒嬌和橫衝直衝的公貓。"><img src="/images/life-5.jpg"  alt="" /></li>
-        <li data-toggle="tooltip" data-placement="bottom" title="人生第一次挑戰搭便車＆沙發衝浪。在日本交換生涯結束之前，我規劃從我所在的千葉縣，搭車前往北海道最北端。雖然最後因為一些因素只搭到青森就結束旅程，但我也很滿足了。"><img src="/images/life-1.jpg"  alt="" /></li>
-        <li data-toggle="tooltip" data-placement="bottom" title="在大四寒假的時候我跑到菲律賓當了六個禮拜的國際志工，而這也是我生平第一次'一個人'出國的經驗（雖然我後來發現我的夥伴有一大堆中國人跟台灣人，一點都不“異國”XD）。" > <img src="/images/life-2.jpg"  alt="" /></li>
-      </ul>
+
     <!-- </div> -->
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h3 class="title-three">關於我</h3>
-          <p class="text-three">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
-        </div>
-        <div class="col-md-4">
-          <img class="img-rd" src="http://izee.ro/market/mywall/one-plus/img/programmer.png" alt="全端工程師"/>
-          <h3 class="title-rd">全端工程師</h3>
-          <p class="text-rd">買書免錢 • 教育訓練、研討會 • 年終獎金 • 人才推薦獎金 • 專案獎金 • 部門 team building • 勞保、健保、退休金 不規定上下班時間 可自由在家工作</p>
-        </div>
-         <div class="col-md-4">
-          <img class="img-rd" src="http://izee.ro/market/mywall/one-plus/img/brain.png" alt="寫作者" />
-          <h3 class="title-rd">寫作者</h3>
-          <p class="text-rd">重點不是花錢 重點在於用心 20 • 每季慶生會 • 每季電影會 • 每月下月茶 • 月會早餐 • 三節禮金 • 同儕推薦獎金 • 健康檢查 •</p>
-        </div>
-         <div class="col-md-4">
-          <img class="img-rd" src="http://izee.ro/market/mywall/one-plus/img/rocket.png" alt="創業家"/>
-          <h3 class="title-rd">創業家</h3>
-          <p class="text-rd">重點不是花錢 重點在於用心 20 • 每季慶生會 • 每季電影會 • 每月下月茶 • 月會早餐 • 三節禮金 • 同儕推薦獎金 • 健康檢查 •</p>
-        </div>
+        
+        <h3 class="title-three">我的生活</h3>
+        <ul>
+          <li data-toggle="tooltip" data-placement="bottom" title="在日本千葉大學交換一年期間，讓我擁有了一段非常美好的人生回憶，也讓我交到了許多來自不同國家的好朋友：）"><img src="/images/life-3.jpg"  alt="" /></li>
+          <li data-toggle="tooltip" data-placement="bottom" title="大四時參加的工學院的計畫，讓我生平第一次踏上美帝的國土。也謝謝成大學長姐的導覽，讓我有機會一虧Google總部，還買了很多紀念品XD。"><img src="/images/life-4.jpg"  alt="" /></li>
+          <li data-toggle="tooltip" data-placement="bottom" title="我家的肥貓'大仔'，雖然大隻但是叫聲卻很秀氣（可能是因為少了蛋蛋......），是隻很愛撒嬌和橫衝直衝的公貓。"><img src="/images/life-5.jpg"  alt="" /></li>
+          <li data-toggle="tooltip" data-placement="bottom" title="人生第一次挑戰搭便車＆沙發衝浪。在日本交換生涯結束之前，我規劃從我所在的千葉縣，搭車前往北海道最北端。雖然最後因為一些因素只搭到青森就結束旅程，但仍舊是一段令人印象深刻的旅程啊。"><img src="/images/life-1.jpg"  alt="" /></li>
+          <li data-toggle="tooltip" data-placement="bottom" title="在大四寒假的時候我跑到菲律賓當了六個禮拜的國際志工，而這也是我生平第一次'一個人'出國的經驗（雖然後來發現我的夥伴有一大堆中國人跟台灣人，常常都會以為我在台灣XD）。" > <img src="/images/life-2.jpg"  alt="" /></li>
+        </ul>
       </div>
     </div>
   </section>
   <section id="skills" class="full-section-two bg-skills">
     <div class="container">
       <h2 class="title-main mywhite">技能和能力</h2>
-      <p class="text-main mywhite">在這裡，我們專注於如何創造人生，並包括寫作、思考、程式、開創財富等技能提升首頁</p>
+      <p class="text-main mywhite">從去年開始到現在，陸陸續續接觸了不同的語言和框架，雖然不敢說很熟練，但是我有自信能夠結合所學，建立一些像是這份履歷一樣，運用到前後端知識的作品。</p>
     
       <div class="row">
-        <div class="col-md-6 spear">
-          <div class="row">
-            <div class="hidden-xs col-sm-2 icon-skill">
-              <img src="http://izee.ro/market/mywall/one-plus/img/html5.png" alt="html 5" />
-            </div>
-            <div class=" col-sm-10">
-              <div class="row">
-                <div class="col-sm-12 title-skill">HTML5</div>
-                <div class="col-sm-12 bar-skill">
-                  <div class="this-skill my-green my-sixty"></div>
+        <% @skill.each do |key, value| %>
+          <div class="col-md-6 spear">
+            <div class="row">
+              <div class="hidden-xs col-sm-2 icon-skill">
+                <img src="../images/<%= value[0] %>.png" alt="<%= value[0] %>" />
+              </div>
+              <div class=" col-sm-10">
+                <div class="row">
+                  <div class="col-sm-12 title-skill"><%= key %></div>
+                  <div class="col-sm-12 bar-skill">
+                    <div class="this-skill my-green <%= value[1] %>"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 spear">
-          <div class="row">
-            <div class="hidden-xs col-sm-2 icon-skill">
-              <img src="http://izee.ro/market/mywall/one-plus/img/css3.png" alt="css 3" />
-            </div>
-            <div class=" col-sm-10">
-              <div class="row">
-                <div class="col-sm-12 title-skill">CSS3</div>
-                <div class="col-sm-12 bar-skill">
-                  <div class="this-skill my-green my-fifty"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 spear">
-          <div class="row">
-            <div class="hidden-xs col-sm-2 icon-skill">
-              <img src="/images/ruby_1.png" alt="ruby" />
-            </div>
-            <div class=" col-sm-10">
-              <div class="row">
-                <div class="col-sm-12 title-skill">Ruby</div>
-                <div class="col-sm-12 bar-skill">
-                  <div class="this-skill my-green my-fiftyfive"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 spear">
-          <div class="row">
-            <div class="hidden-xs col-sm-2 icon-skill">
-              <img src="http://izee.ro/market/mywall/one-plus/img/js.png" alt="javascript" />
-            </div>
-            <div class=" col-sm-10">
-              <div class="row">
-                <div class="col-sm-12 title-skill">JavaScript</div>
-                <div class="col-sm-12 bar-skill">
-                  <div class="this-skill my-green my-thirty"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 spear">
-          <div class="row">
-            <div class="hidden-xs col-sm-2 icon-skill">
-              <img src="/images/psql.png" alt="psql" />
-            </div>
-            <div class=" col-sm-10">
-              <div class="row">
-                <div class="col-sm-12 title-skill">PSQL</div>
-                <div class="col-sm-12 bar-skill">
-                  <div class="this-skill my-green my-fifty"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 spear">
-          <div class="row">
-            <div class="hidden-xs col-sm-2 icon-skill">
-              <img src="/images/psql.png" alt="jquery" />
-            </div>
-            <div class=" col-sm-10">
-              <div class="row">
-                <div class="col-sm-12 title-skill">jQuery</div>
-                <div class="col-sm-12 bar-skill">
-                  <div class="this-skill my-green my-fifty"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container cont-mg">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="cont-ab">
-            <h4 class="title-four color-a">語言及其他技能</h4>
-          </div>
-        </div>
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-        </div>
+        <% end %>
       </div>
     </div>
   </section>
@@ -351,7 +250,6 @@
 <!-- Text Education -->
 <div class="container">
   <h2 class="title-main">教育程度</h2>
-  <p class="text-main">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
 <!-- Timeline Responsive -->
@@ -416,7 +314,7 @@
 <div class="container cont-mg">
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#1" role="tab" data-toggle="tab" aria-expanded="false">Google</a></li>
+      <li role="presentation" class="active"><a href="#1" role="tab" data-toggle="tab" aria-expanded="false">米蟲</a></li>
       <li role="presentation" class=""><a href="#2" role="tab" data-toggle="tab" aria-expanded="false">Fish Hostel魚旅背包客棧</a></li>
       <li role="presentation" class=""><a href="#3" role="tab" data-toggle="tab" aria-expanded="false">土女時代</a></li>
       <li role="presentation" class=""><a href="#4" role="tab" data-toggle="tab" aria-expanded="false">國軍</a></li>
@@ -428,28 +326,28 @@
       <div role="tabpanel" class="tab-pane fade active in" id="1">
         <h3 class="title-wk">Front End Web Developer</h3>
       <p class="wk-company">Google Inc.</p>
-      <p class="text-wk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. <br> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-      <p class="wk-date">2014 - 2015</p>
+      <p class="text-wk">從去年八月離職後，我就開始全職在家自學coding。從那時我就很困惑，為什麼很多長輩聽到你在學寫程式就會覺得你很奇怪，但是如果你說你在準備公務員就會覺得好棒棒？我個人是覺得寫程式有趣多了<br><br><br></p>
+      <p class="wk-date">2016.9 - 現在</p>
       </div>
       <!-- Tab 2 -->
       <div role="tabpanel" class="tab-pane fade" id="2">
         <h3 class="title-wk">管家（包山包海）</h3>
         <p class="wk-company">Fish Hostel魚旅背包客棧</p>
-      <p class="text-wk">Duis aute irure dolor in reprehenderit in voluptate velit. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+      <p class="text-wk">在這份工作中我幾乎是全權負責青旅的業務，包含接待、發文、網站製作。當初會接下這份工作是因為有機會學習如何獨立經營，並且在行銷和網站製作上能夠做中學。不過後來事態漸漸的不像自己期望的發展，所以比預計的時間提早離職。在這段期間製作網站的過程中，我花了幾百個小時使用wordpress，但是只會用工具卻什麼技術也沒有學到的不適感，讓我下定決心開始學習coding，期望掌握真正能夠解決問題的能力。</p>
       <p class="wk-date">2016.3 - 2016.8</p>
       </div>
       <!-- Tab 3 -->
       <div role="tabpanel" class="tab-pane fade" id="3">
         <h3 class="title-wk">電商行銷實習生</h3>
       <p class="wk-company">土女時代</p>      
-      <p class="text-wk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. <br> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+      <p class="text-wk">從軍中退伍後，我就立刻進入了這間電商成為了行銷實習生，主要職責是撰寫文案、活動發想還有出貨。雖然當時的我對行銷很有興趣，也有致繼續在這個領域深耕，但一直想要往海外發展的我我也開始思考，是否有辦法透過行銷這個技能去不同的國家歷練？因為行銷除了入門門檻低導致競爭過度激烈，相對來說這個技能因為文化、語言、工具的關係，沒辦法輕易地跨國界發揮，而我也從那時開始希望掌握更多不受國界影響的“技術”能力。</p>
       <p class="wk-date">2015.10 - 2015.12</p>
       </div>
       <!-- Tab 4 -->
       <div role="tabpanel" class="tab-pane fade" id="4">
         <h3 class="title-wk">班機兵兼政戰文書（還債）</h3>
         <p class="wk-company">564旅機步二營步二連</p>
-        <p class="text-wk">Duis aute irure dolor in reprehenderit in voluptate velit. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        <p class="text-wk">人生最黑暗的時刻，沒有之一！（黑暗到我不想多寫XD）<br><br><br><br></p>
         <p class="wk-date">2014.10 - 2015.10</p>
       </div>
     </div>
@@ -474,6 +372,97 @@
     </ul>
   </div>
 </section>
+<section id="skills" class="full-section-two bg-skills">
+    <div class="container">
+      <h2 class="title-main mywhite">為什麼是五倍紅寶石</h2>
+      <p class="text-main mywhite">實習的意思，應該就是從實作中學習。<br><br>我知道我目前的程度，大概就是在初心者和實際上戰場之間。如果有機會能夠進入五倍紅寶石實習，我一定會像塊海綿一樣不斷吸收新知，而有機會的話我更希望能夠參與專案、貢獻自己的能力；不過當然，如果沒有被錄取，那表示我的程度或某些條件不符紅寶石的期望，顯然我還有不少的努力空間，繼續靠自己的能力補足就是。但是如果真的有幸能被錄取的話</p>
+    
+      <div class="row">
+        
+      </div>
+    </div>
+    <div class="container cont-mg">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="cont-ab">
+            <h4 class="title-four color-a">日文交流</h4>
+            <!-- Software Abilitie 1 -->
+            <div class="row">
+              <p class="text-awsm">先前有幸在學習日文一年後，到日本千葉大交換一年，在這段時間對日文的學習跟使用有了更深刻的認識，並幸運的通過了N1的檢定。<br><br>我知道五倍紅寶石跟日本有相當密切的交流，也有許多夥伴對於學習日文有興趣。雖然近期比較少在使用日文，但如果能有幫得上忙的地方，我自然義不容辭XD</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cont-ab">
+            <h4 class="title-four color-a">書籍推薦、寫作技巧交流</h4>
+            <!-- Software Abilitie 1 -->
+            <div class="row">
+              <p class="text-awsm">平時最大的興趣就是看書，也對挑書小有心得，如果有夥伴同樣對閱讀、買書的需求的話，說不定可以聊聊。<br><br>我平常也有寫作的習慣，如果有在/想要寫部落格的夥伴想要交流，我也很希望可以從彼此的身上學到更多。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cont-ab">
+            <h4 class="title-four color-a">鏟屎官</h4>
+            <!-- Software Abilitie 1 -->
+            <div class="row">
+              <p class="text-awsm">如果鏟屎官臨時需要頂替，身為家中有六隻貓的人，我應該可以幫得上忙。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="aboutme" class="full-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="title-three">未來目標</h3>
+          <blockquote>Life is growth, you grow or you die.－Phil Knight，Nike創辦人</blockquote><p class="text-three">自從在Nike創辦人的書中看到這句話之後，我就愛上了這句話。關於更遠的未來，我心中有幾個很想達成，但卻相對模糊的目標；不過如果只是討論接下來的五年，那就相對明確多了。在接下來的五年，我期望我可以持續做到：</p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-rd" src="http://izee.ro/market/mywall/one-plus/img/programmer.png" alt="全端工程師"/>
+          <h3 class="title-rd">全端工程師</h3>
+          <p class="text-rd">每個人都有學習coding的理由，但對我來說它是一個集樂趣、實用性、複利效應這些多重目標於一身的技能。而我，最希望利用coding的能力來解決生活中會遇到的問題。<br><br>在接下來的日子我都會持續不斷的鍛鍊自己的能力，以成為一名優秀的工程師為目標。</p>
+        </div>
+         <div class="col-md-4">
+          <img class="img-rd" src="http://izee.ro/market/mywall/one-plus/img/brain.png" alt="寫作者" />
+          <h3 class="title-rd">寫作者</h3>
+          <p class="text-rd">從去年開始我養成了一天寫一篇<a href="http://www.createyourownlives.com" target="_blank" alt="林家弘的部落格">文章</a>的習慣，因為我想要透過這個方式，來倒逼自己輸入知識、大量思考、總結，期望自己的文字對他人有所幫助，而在這個過程中我也感受到寫作和思考帶來的好處。<br><br>雖然近期刻意放慢了產出的步調，但未來的我依舊會筆耕不輟，希望能寫出更多好文章。</p>
+        </div>
+         <div class="col-md-4">
+          <img class="img-rd" src="http://izee.ro/market/mywall/one-plus/img/rocket.png" alt="創業家"/>
+          <h3 class="title-rd">實踐家</h3>
+          <p class="text-rd">「希望在29歲結束之前創業」，這是我給自己的目標。這是個大眾創業、自由工作者崛起的時代，但創業僅僅只是個人選擇實現自己目標的方式，並沒有特別高尚。<br><br></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="download" class="full-download">
+    <div class="container">
+      <div class="row">
+        <!-- Social Networks -->
+        <div class="col-sm-12 btn-class col-md-7">
+          <a href="https://www.facebook.com/profile.php?id=100000288407367" target="_blank" class="social-ink">
+            <img class="socl" src="../images/facebook-icon.png" alt="facebook">
+          </a>
+          <a href="https://medium.com/@pk60905" target="_blank" class="social-ink">
+            <img class="socl" src="../images/medium-icon.png" alt="medium">
+          </a>
+          <a href="https://github.com/jerrylin224" target="_blank" class="social-ink">
+            <img class="socl" src="../images/github-icon.png" alt="github">
+          </a>
+          <a href="http://www.createyourownlives.com" target="_blank" class="social-ink">
+            <img class="socl" src="../images/pencil.png" alt="personal_blog">
+          </a>
+        </div>
+        <!-- Download Resume - CV -->
+        <div class="col-sm-5 btn-class hidden-sm hidden-xs">
+          <a class="btn-dwnld" href="#">下載簡歷</a>
+        </div>
+      </div>
+    </div>
+  </section>
 <section id="contacto" class="full-section-three bg-contact">
   <div class="container">
     <!-- Title Contact me -->
@@ -504,14 +493,14 @@
           <input type="email" class="form-control ct-mail" name="email" id="email" placeholder="信箱" required="">
         </div>
         <div class="form-group col-md-6 col-md-offset-3">
-          <textarea class="form-control ct-message" rows="6" name="message" id="message" placeholder="Write anything here..." required=""></textarea>
+          <textarea class="form-control ct-message" rows="6" name="message" id="message" placeholder="你想說的話..." required=""></textarea>
         </div>
       </div>
       <!-- Button Send -->
       <div class="row">
         <div class="form-group col-md-6 col-md-offset-3">
           <div id="successmsg"></div>
-          <button type="submit" name="button" id="button" class="btn btnc2 with-br btn-ctc"><span>Send Now</span></button>
+          <button type="submit" name="button" id="button" class="btn btnc2 with-br btn-ctc"><span>寄出</span></button>
         </div>
       </div>
     </form>
