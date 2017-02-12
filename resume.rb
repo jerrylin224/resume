@@ -31,7 +31,7 @@ post '/contact' do
     body: '收到來自#{params[:email]} 的來信，內容是： ' + params[:message],
     via: :smtp,
     via_options: {
-      address:               'smtp.gmail.com',
+      address:               'smtp.sendgrid.net',
       port:                  '587',
       enable_starttls_auto:  true,
       user_name:             ENV['SENDGRID_USERNAME'],
