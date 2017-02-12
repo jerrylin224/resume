@@ -243,13 +243,18 @@ header {
     opacity: 1;
 }
 
-.title-wk {
+.title-wk,
+.title-why {
     text-align: center;
     font-size: 34px;
     color: #0CD2A4;
     font-weight: 300;
     padding-top: 20px;
 }
+
+/*.title-why {
+  text-align: left;
+}*/
 
 .wk-company, .wk-date {
     text-align: center;
