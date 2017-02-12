@@ -63,7 +63,6 @@ body {
 }
 
 .button-mywall {
-    /*background: #EC0856;*/
     color: #FFF;
     border-radius: 50px;
     font-weight: 400;
@@ -73,7 +72,6 @@ body {
     padding-left: 25px;
     line-height: 58px;
     margin-bottom: 10px;
-    /*border: 2px solid #EC0856;*/
     text-align: center;
     -webkit-transition: all .5s;
     transition: all .5s;
@@ -243,8 +241,7 @@ header {
     opacity: 1;
 }
 
-.title-wk,
-.title-why {
+.title-wk {
     text-align: center;
     font-size: 34px;
     color: #0CD2A4;
@@ -252,9 +249,12 @@ header {
     padding-top: 20px;
 }
 
-/*.title-why {
-  text-align: left;
-}*/
+.title-why {
+    font-size: 48px;
+    color: #0CD2A4;
+    font-weight: 300;
+    padding: 20px 0;
+}
 
 .wk-company, .wk-date {
     text-align: center;
