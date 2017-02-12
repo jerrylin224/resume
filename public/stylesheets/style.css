@@ -283,22 +283,18 @@ a, a:active, a:hover, a:visited {
     fill: #FFF;
 }
 
-#aboutme {
-  overflow: hidden;
-}
-
-#aboutme ul {
+#about ul {
   font-size: 0;
   padding: 0;
 }
 
-#aboutme ul li {
+#about ul li {
   display: inline-block;
   width: 20%;
   padding-right: 10px;
 }
 
-#aboutme li img {
+#about li img {
   width: 100%;
 }
 
@@ -681,6 +677,10 @@ article .fa {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-bottom: 1px solid #04A57F!important;
+}
+
+.modal-title {
+    font-size: 24px;
 }
 
 .getmetelf {
