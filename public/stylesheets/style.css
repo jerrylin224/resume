@@ -298,10 +298,6 @@ a, a:active, a:hover, a:visited {
   padding-right: 10px;
 }
 
-/*#aboutme ul li:last-child {
-   padding: 0;
-}*/
-
 #aboutme li img {
   width: 100%;
 }
@@ -352,7 +348,6 @@ article {
 
 article .social_link {
   text-align: center;
-  /*width: 300px;*/
   padding: 0;
 }
 
@@ -368,7 +363,6 @@ article .social_link li {
 
 article .fa {
   font-size: 2em;
-  /*padding: 0 10px;*/
  }
 
 
@@ -435,7 +429,6 @@ article .fa {
 .container {
   margin: 0px auto;
   padding: 0 15px;
-  /*background:#121212 url("subheader.png") 0 0 no-repeat;*/
 }
 
 .container::before,
