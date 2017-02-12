@@ -37,7 +37,7 @@ post '/contact' do
       user_name:             ENV['SENDGRID_USERNAME'],
       password:              ENV['SENDGRID_PASSWORD'],
       authentication:        :plain,
-      # domain:                'localhost.localdomain'
+      domain:                ENV['SENDGRID_DOMAIN']
     }
   )
   redirect '/thank_you'
