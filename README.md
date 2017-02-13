@@ -11,3 +11,8 @@
 + 利用Grid System處理RWD
 + 利用Sinatra這個套件建立網頁
 + 串接pony和sendgrid
+
+
+![](public/images/resume-first.gif)
+
+![](public/images/resume-last.gif)
