@@ -9,5 +9,5 @@
 + 如何使用Bootstrap和jQuery
 + Codecademy的jQuery課程
 + 利用Grid System處理RWD
-+ 利用Sinatra這個套件建立
++ 利用Sinatra這個套件建立網頁
 + 串接pony和sendgrid
