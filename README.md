@@ -1,4 +1,4 @@
-# 五倍紅寶石的履歷
+# 五倍紅寶石的履歷（[成品連結](https://afternoon-sea-48996.herokuapp.com/)）
 
 這份作品是為了應徵紅寶石的後端職缺所製作的。
 
@@ -11,3 +11,8 @@
 + 利用Grid System處理RWD
 + 利用Sinatra這個套件建立網頁
 + 串接pony和sendgrid
+
+
+![](public/images/resume-first.gif)
+
+![](public/images/resume-last.gif)
